@@ -14,10 +14,9 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tighter">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
-              <span className="text-white">AI</span>
-            </div>
-            <span className="text-zinc-900">Workforce<span className="text-indigo-600">.ai</span></span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/faustfuture.png" alt="FaustFuture Logo" className="h-8 w-auto object-contain" />
+            <span className="text-zinc-900">FaustFuture</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -34,9 +33,11 @@ export function Navbar() {
             <Link href="#faq" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
               FAQ
             </Link>
-            <Button className="bg-zinc-900 text-white hover:bg-zinc-800">
-              Book Consultation
-            </Button>
+            <Link href="#contact">
+              <Button className="bg-zinc-900 text-white hover:bg-zinc-800">
+                Book Consultation
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -65,9 +66,11 @@ export function Navbar() {
           <Link href="#faq" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
             FAQ
           </Link>
-          <Button className="w-full bg-zinc-900 text-white hover:bg-zinc-800">
-            Book Consultation
-          </Button>
+          <Link href="#contact" onClick={() => setIsOpen(false)}>
+            <Button className="w-full bg-zinc-900 text-white hover:bg-zinc-800">
+              Book Consultation
+            </Button>
+          </Link>
         </motion.div>
       )}
     </nav>

@@ -35,7 +35,7 @@ const roles = [
 
 export function Roles() {
   return (
-    <section id="roles" className="py-24 relative overflow-hidden bg-white">
+    <section id="roles" className="py-32 md:py-40 relative overflow-hidden bg-white">
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-50/50 rounded-full blur-[100px] -z-10" />
 

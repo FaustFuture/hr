@@ -9,7 +9,10 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-white">
       {/* Background Elements */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-50/50 via-white to-white" />
+      <div className="absolute inset-0 -z-10 bg-white" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-50/80 via-purple-50/50 to-white blur-3xl opacity-80" />
+      <div className="absolute top-0 right-0 -z-10 w-[800px] h-[800px] bg-indigo-100/40 rounded-full blur-[100px] translate-x-1/3 -translate-y-1/4" />
+      <div className="absolute bottom-0 left-0 -z-10 w-[600px] h-[600px] bg-purple-100/40 rounded-full blur-[100px] -translate-x-1/3 translate-y-1/4" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-100 to-transparent" />
 
       <div className="container mx-auto px-4 md:px-6 grid lg:grid-cols-2 gap-12 items-center">

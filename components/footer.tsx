@@ -10,10 +10,9 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 font-bold text-xl tracking-tighter mb-4">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center">
-                <span className="text-white">AI</span>
-              </div>
-              <span className="text-zinc-900">Workforce<span className="text-indigo-600">.ai</span></span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/faustfuture.png" alt="FaustFuture Logo" className="h-8 w-auto object-contain" />
+              <span className="text-zinc-900">FaustFuture</span>
             </Link>
             <p className="text-zinc-500 max-w-xs">
               Helping forward-thinking companies build the AI-native workforce of tomorrow.
@@ -43,7 +42,7 @@ export function Footer() {
         
         <div className="pt-8 border-t border-zinc-200 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-zinc-500">
-            © 2025 AI Workforce Consulting. All rights reserved.
+            © 2025 FaustFuture. All rights reserved.
           </div>
           <div className="flex gap-4">
             <Link href="#" className="text-zinc-400 hover:text-zinc-900 transition-colors">
