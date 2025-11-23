@@ -5,14 +5,14 @@ import { Bot, User, Brain, Zap } from "lucide-react"
 
 export function WorkflowGraphic() {
   return (
-    <div className="relative w-full h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
+    <div className="relative max-sm:hidden w-full h-[300px] sm:h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
 
       {/* 
         Fixed coordinate system container 
         Desktop: 600x500
         Mobile: Scaled down
       */}
-      <div className="relative w-[600px] h-[500px] scale-[0.55] sm:scale-[0.7] md:scale-100 origin-center flex-shrink-0">
+      <div className="relative w-[600px] h-[500px] scale-[0.52] sm:scale-[0.7] md:scale-100 origin-center flex-shrink-0">
         
         {/* Central Hub - The Manager */}
         {/* Center is at 300, 250 */}

@@ -18,7 +18,7 @@ export function Contact() {
     const formData = new FormData(event.currentTarget)
     // Add your Web3Forms Access Key here. 
     // Ideally, use an environment variable: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE") 
+    formData.append("access_key", "e25327f1-0fce-4d28-b51c-3410d22550a8") 
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -42,7 +42,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-32 md:py-40 bg-gradient-to-b from-zinc-50 to-white">
+    <section id="contact" className="py-16 md:py-32 lg:py-40 bg-gradient-to-b from-zinc-50 to-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
           <div>
@@ -103,7 +103,7 @@ export function Contact() {
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-zinc-700">Work Email</label>
-                    <input required name="email" id="email" type="email" className="w-full h-10 rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="jane@company.com" />
+                    <input required name="email" id="email" type="email" className="w-full h-10 rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm text-zinc-900 placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="klemens@faustfuture.com" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="message" className="text-sm font-medium text-zinc-700">Main Challenge</label>

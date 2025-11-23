@@ -33,7 +33,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section id="process" className="py-32 md:py-40 bg-zinc-50">
+    <section id="process" className="py-16 md:py-32 lg:py-40 bg-zinc-50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 mb-4">Our Consulting Process</h2>
@@ -52,13 +52,13 @@ export function Process() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className={`flex flex-col md:flex-row gap-8 items-start md:items-center ${
+                className={`flex flex-row gap-6 md:gap-8 items-start md:items-center ${
                   index % 2 === 0 ? "md:flex-row-reverse" : ""
                 }`}
               >
-                {/* Content Side */}
-                <div className="flex-1 md:text-right">
-                  <div className={`hidden md:block ${index % 2 === 0 ? "text-left" : "text-right"}`}>
+                {/* Content Side (Desktop Left / Mobile Hidden) */}
+                <div className="hidden md:block flex-1 md:text-right">
+                  <div className={`${index % 2 === 0 ? "text-left" : "text-right"}`}>
                     <h3 className="text-xl font-bold text-zinc-900 mb-2">{step.title}</h3>
                     <p className="text-zinc-600">{step.description}</p>
                   </div>
@@ -71,8 +71,8 @@ export function Process() {
                   </div>
                 </div>
 
-                {/* Content Side (Mobile/Desktop Alternate) */}
-                <div className="flex-1">
+                {/* Content Side (Mobile Right / Desktop Right) */}
+                <div className="flex-1 pt-1 md:pt-0">
                   <div className={`md:hidden`}>
                     <h3 className="text-xl font-bold text-zinc-900 mb-2">{step.title}</h3>
                     <p className="text-zinc-600">{step.description}</p>

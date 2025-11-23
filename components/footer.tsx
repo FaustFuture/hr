@@ -14,28 +14,27 @@ export function Footer() {
               <img src="/faustfuture.png" alt="FaustFuture Logo" className="h-8 w-auto object-contain" />
               <span className="text-zinc-900">FaustFuture</span>
             </Link>
-            <p className="text-zinc-500 max-w-xs">
+            <p className="text-zinc-500 max-w-xs mb-4">
               Helping forward-thinking companies build the AI-native workforce of tomorrow.
             </p>
+            <a href="mailto:klemens@faustfuture.com" className="text-sm font-medium text-indigo-600 hover:text-indigo-700 transition-colors">
+              klemens@faustfuture.com
+            </a>
           </div>
           
           <div>
             <h3 className="font-semibold text-zinc-900 mb-4">Services</h3>
             <ul className="space-y-2 text-sm text-zinc-600">
-              <li><Link href="#" className="hover:text-indigo-600 transition-colors">Workflow Audit</Link></li>
-              <li><Link href="#" className="hover:text-indigo-600 transition-colors">Role Design</Link></li>
-              <li><Link href="#" className="hover:text-indigo-600 transition-colors">Team Training</Link></li>
-              <li><Link href="#" className="hover:text-indigo-600 transition-colors">Implementation</Link></li>
+              <li><Link href="/services" className="hover:text-indigo-600 transition-colors">Our Services</Link></li>
+              <li><a href="https://ai.faustfuture.com" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition-colors flex items-center gap-1">AI Suite <span className="text-xs bg-indigo-100 text-indigo-600 px-1.5 py-0.5 rounded-full">New</span></a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-semibold text-zinc-900 mb-4">Company</h3>
+            <h3 className="font-semibold text-zinc-900 mb-4">Legal</h3>
             <ul className="space-y-2 text-sm text-zinc-600">
-              <li><Link href="#" className="hover:text-indigo-600 transition-colors">About Us</Link></li>
-              <li><Link href="#" className="hover:text-indigo-600 transition-colors">Case Studies</Link></li>
-              <li><Link href="#" className="hover:text-indigo-600 transition-colors">Blog</Link></li>
-              <li><Link href="#" className="hover:text-indigo-600 transition-colors">Contact</Link></li>
+              <li><Link href="/privacy" className="hover:text-indigo-600 transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-indigo-600 transition-colors">Terms & Conditions</Link></li>
             </ul>
           </div>
         </div>

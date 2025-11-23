@@ -27,7 +27,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = React.useState<number | null>(0)
 
   return (
-    <section id="faq" className="py-32 md:py-40 bg-white">
+    <section id="faq" className="py-16 md:py-32 lg:py-40 bg-white">
       <div className="container mx-auto px-4 md:px-6 max-w-3xl">
         <h2 className="text-3xl md:text-5xl font-bold text-zinc-900 mb-12 text-center">Common Questions</h2>
         

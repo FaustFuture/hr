@@ -21,19 +21,19 @@ export function Navbar() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="#services" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
+            <Link href="/#services" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
               Services
             </Link>
-            <Link href="#process" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
+            <Link href="/#process" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
               Process
             </Link>
-            <Link href="#roles" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
+            <Link href="/#roles" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
               Roles
             </Link>
-            <Link href="#faq" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
+            <Link href="/#faq" className="text-sm font-medium text-zinc-600 hover:text-indigo-600 transition-colors">
               FAQ
             </Link>
-            <Link href="#contact">
+            <Link href="/#contact">
               <Button className="bg-zinc-900 text-white hover:bg-zinc-800">
                 Book Consultation
               </Button>
@@ -54,19 +54,19 @@ export function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           className="md:hidden absolute top-16 left-0 right-0 bg-white border-b border-zinc-200 p-4 flex flex-col gap-4 shadow-lg"
         >
-          <Link href="#services" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
+          <Link href="/#services" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
             Services
           </Link>
-          <Link href="#process" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
+          <Link href="/#process" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
             Process
           </Link>
-          <Link href="#roles" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
+          <Link href="/#roles" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
             Roles
           </Link>
-          <Link href="#faq" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
+          <Link href="/#faq" className="text-sm font-medium text-zinc-600 hover:text-indigo-600" onClick={() => setIsOpen(false)}>
             FAQ
           </Link>
-          <Link href="#contact" onClick={() => setIsOpen(false)}>
+          <Link href="/#contact" onClick={() => setIsOpen(false)}>
             <Button className="w-full bg-zinc-900 text-white hover:bg-zinc-800">
               Book Consultation
             </Button>

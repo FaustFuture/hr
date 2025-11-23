@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,7 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hr-ecru-xi.vercel.app"),
   title: "FaustFuture | Hiring in the Age of AI",
   description: "We help companies build AI-native workforces. Map your workflows, automate with agents, and upskill your team to orchestrate intelligence.",
   keywords: ["AI consulting", "workforce automation", "AI hiring", "future of work", "AI strategy", "business automation", "AI workforce"],
@@ -28,7 +36,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg", // We'll assume this exists or it will fallback
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "FaustFuture - Hiring in the Age of AI",
@@ -62,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>
